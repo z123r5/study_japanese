@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/public/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/public/css/japanese.css}">
+    <title>基础记忆</title>
+</head>
+<body>
+<div class="tips">
+    <div class="tips-heading">
+        基础记忆
+    </div>
+    <div class="homearticle" style="padding-left:12px;text-align:justify;line-height:1.8em">
+        <p>
+           请在输入框中将假名的罗马音发音输入后提交，后台会自动记录经常混淆的假名，并提高易错假名刷新的几率增强记忆(<ゝω·)☆ ~
+        </p>
+    </div>
+</div>
+    <div class="card">
+        <div id="kana" class="japanese">
+
+        </div>
+        <div class="j_form">
+            <form id="japanForm" action="" method="post">
+                <input type="text" style="color: #3b3b3b" name="japanese" autocomplete="off">
+                <input type="button" style="color: #3b3b3b" value="提交" onclick="submitForm()"/><input type="button" style="color: #3b3b3b" value="换一个" onclick="anotherWord()"/>
+            </form>
+        </div>
+    </div>
+    <div style="width: 700px;height: 150px;margin:10px auto">
+        <div class="tips">
+            <div class="tips-heading">
+                结果
+            </div>
+            <div class="homearticle" style="padding-left:12px;text-align:justify;line-height:1.8em">
+                <p><span style="font-size:24px;"><b>发音正确</b> </span>
+                    <br>当前假名的正确率为：
+                    <br>上一次混淆的发音是：
+                </p>
+            </div>
+        </div>
+    </div>
+<script th:src="@{/public/libs/jquery.min.js}"></script>
+<script th:src="@{/public/libs/bootstrap.min.js}"></script>
+<script th:src="@{/public/js/japan.js}"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:55:50 com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2083) DruidDataSource.java ERROR create connection error, url: jdbc:mysql://localhost:3306/study_japanese?useSSL=true&serverTimezone=GMT&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'study_japanese'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1452)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2020-01-06 16:57:13 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 18:14:35 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 18:31:33 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 19:56:08 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 19:56:08 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-06 19:59:47 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 19:59:48 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-06 20:58:09 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-06 20:58:09 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 15:05:14 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 15:05:15 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 15:11:36 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 15:11:36 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 15:21:14 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 15:21:14 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 15:32:47 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 15:32:47 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 15:50:36 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 15:50:36 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 16:51:24 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 16:51:24 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 16:54:22 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 16:54:23 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 16:55:00 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 16:55:00 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 17:51:55 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 17:51:55 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 17:52:31 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 17:52:31 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 17:56:36 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 17:56:36 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 17:59:29 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 17:59:29 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:00:42 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:00:42 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:01:50 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:01:51 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:06:44 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:06:44 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:11:01 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:11:01 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:11:40 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:11:41 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:42:56 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:42:56 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:42:56 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 18:52:09 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 18:52:09 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 18:52:09 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 18:52:09 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20002} enter cache
+2020-01-08 19:00:03 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 19:00:03 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 19:00:03 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 19:00:03 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20002} enter cache
+2020-01-08 19:00:03 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20003} enter cache
+2020-01-08 20:19:44 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 20:19:44 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 20:20:50 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 20:20:50 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 20:20:50 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 20:22:36 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 20:22:37 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 20:22:37 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:44:41 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:44:41 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:45:09 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:45:56 com.alibaba.druid.pool.PreparedStatementPool.closeRemovedStatement(PreparedStatementPool.java:152) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} exit cache
+2020-01-08 22:45:56 com.alibaba.druid.pool.PreparedStatementPool.closeRemovedStatement(PreparedStatementPool.java:152) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} exit cache
+2020-01-08 22:45:56 com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1514) DruidDataSource.java INFO {dataSource-1} closed
+2020-01-08 22:46:27 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:46:27 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:46:28 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:48:36 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:48:36 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:48:36 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:49:34 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:49:35 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:50:07 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:51:14 com.alibaba.druid.pool.PreparedStatementPool.closeRemovedStatement(PreparedStatementPool.java:152) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} exit cache
+2020-01-08 22:51:14 com.alibaba.druid.pool.PreparedStatementPool.closeRemovedStatement(PreparedStatementPool.java:152) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} exit cache
+2020-01-08 22:51:14 com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1514) DruidDataSource.java INFO {dataSource-1} closed
+2020-01-08 22:51:37 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:51:37 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:51:37 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:55:32 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:55:32 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:55:33 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:55:33 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20002} enter cache
+2020-01-08 22:56:57 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:785) DruidDataSource.java INFO {dataSource-1} inited
+2020-01-08 22:56:58 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20000} enter cache
+2020-01-08 22:56:58 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20001} enter cache
+2020-01-08 22:56:58 com.alibaba.druid.pool.PreparedStatementPool.put(PreparedStatementPool.java:121) PreparedStatementPool.java DEBUG {conn-10005, pstmt-20002} enter cache

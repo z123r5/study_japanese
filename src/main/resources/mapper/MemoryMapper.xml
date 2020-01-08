@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.self.study_japanese.dao.MemoryMapper" >
+  <resultMap id="BaseResultMap" type="com.self.study_japanese.pojo.Memory" >
+    <id column="memory_id" property="memoryId" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="memory_date" property="memoryDate" jdbcType="TIMESTAMP" />
+    <result column="correct_kana_id" property="correctKanaId" jdbcType="INTEGER" />
+    <result column="mistake_kana_id" property="mistakeKanaId" jdbcType="INTEGER" />
+    <result column="obfuscated_pronunciation" property="obfuscatedPronunciation" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    memory_id, uid, memory_date, correct_kana_id, mistake_kana_id, obfuscated_pronunciation
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.self.study_japanese.pojo.MemoryExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_memory
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_memory
+    where memory_id = #{memoryId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_memory
+    where memory_id = #{memoryId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.self.study_japanese.pojo.MemoryExample" >
+    delete from t_memory
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.self.study_japanese.pojo.Memory" >
+    insert into t_memory (memory_id, uid, memory_date, 
+      correct_kana_id, mistake_kana_id, obfuscated_pronunciation
+      )
+    values (#{memoryId,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{memoryDate,jdbcType=TIMESTAMP}, 
+      #{correctKanaId,jdbcType=INTEGER}, #{mistakeKanaId,jdbcType=INTEGER}, #{obfuscatedPronunciation,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.self.study_japanese.pojo.Memory" >
+    insert into t_memory
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="memoryId != null" >
+        memory_id,
+      </if>
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="memoryDate != null" >
+        memory_date,
+      </if>
+      <if test="correctKanaId != null" >
+        correct_kana_id,
+      </if>
+      <if test="mistakeKanaId != null" >
+        mistake_kana_id,
+      </if>
+      <if test="obfuscatedPronunciation != null" >
+        obfuscated_pronunciation,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="memoryId != null" >
+        #{memoryId,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null" >
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="memoryDate != null" >
+        #{memoryDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="correctKanaId != null" >
+        #{correctKanaId,jdbcType=INTEGER},
+      </if>
+      <if test="mistakeKanaId != null" >
+        #{mistakeKanaId,jdbcType=INTEGER},
+      </if>
+      <if test="obfuscatedPronunciation != null" >
+        #{obfuscatedPronunciation,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.self.study_japanese.pojo.MemoryExample" resultType="java.lang.Integer" >
+    select count(*) from t_memory
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update t_memory
+    <set >
+      <if test="record.memoryId != null" >
+        memory_id = #{record.memoryId,jdbcType=INTEGER},
+      </if>
+      <if test="record.uid != null" >
+        uid = #{record.uid,jdbcType=INTEGER},
+      </if>
+      <if test="record.memoryDate != null" >
+        memory_date = #{record.memoryDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.correctKanaId != null" >
+        correct_kana_id = #{record.correctKanaId,jdbcType=INTEGER},
+      </if>
+      <if test="record.mistakeKanaId != null" >
+        mistake_kana_id = #{record.mistakeKanaId,jdbcType=INTEGER},
+      </if>
+      <if test="record.obfuscatedPronunciation != null" >
+        obfuscated_pronunciation = #{record.obfuscatedPronunciation,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update t_memory
+    set memory_id = #{record.memoryId,jdbcType=INTEGER},
+      uid = #{record.uid,jdbcType=INTEGER},
+      memory_date = #{record.memoryDate,jdbcType=TIMESTAMP},
+      correct_kana_id = #{record.correctKanaId,jdbcType=INTEGER},
+      mistake_kana_id = #{record.mistakeKanaId,jdbcType=INTEGER},
+      obfuscated_pronunciation = #{record.obfuscatedPronunciation,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.self.study_japanese.pojo.Memory" >
+    update t_memory
+    <set >
+      <if test="uid != null" >
+        uid = #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="memoryDate != null" >
+        memory_date = #{memoryDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="correctKanaId != null" >
+        correct_kana_id = #{correctKanaId,jdbcType=INTEGER},
+      </if>
+      <if test="mistakeKanaId != null" >
+        mistake_kana_id = #{mistakeKanaId,jdbcType=INTEGER},
+      </if>
+      <if test="obfuscatedPronunciation != null" >
+        obfuscated_pronunciation = #{obfuscatedPronunciation,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where memory_id = #{memoryId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.self.study_japanese.pojo.Memory" >
+    update t_memory
+    set uid = #{uid,jdbcType=INTEGER},
+      memory_date = #{memoryDate,jdbcType=TIMESTAMP},
+      correct_kana_id = #{correctKanaId,jdbcType=INTEGER},
+      mistake_kana_id = #{mistakeKanaId,jdbcType=INTEGER},
+      obfuscated_pronunciation = #{obfuscatedPronunciation,jdbcType=VARCHAR}
+    where memory_id = #{memoryId,jdbcType=INTEGER}
+  </update>
+
+  <select id="getScore" parameterType="java.lang.Integer" resultType="com.self.study_japanese.dto.QueryScoreDTO">
+    select A.mistake_kana_id mistakeKanaId,A.mistake_time mistakeTime,B.correct_time correctTime FROM
+  (select *,COUNT(mistake_kana_id) mistake_time from t_memory where uid = #{uid,jdbcType=INTEGER} GROUP BY mistake_kana_id) A left JOIN
+  (select *,COUNT(correct_kana_id) correct_time from t_memory where uid = #{uid,jdbcType=INTEGER} GROUP BY correct_kana_id) B
+  on A.mistake_kana_id = B.correct_kana_id
+  where A.mistake_kana_id IS NOT NULL
+  GROUP BY A.mistake_kana_id
+  </select>
+
+</mapper>

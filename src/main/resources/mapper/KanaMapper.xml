@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.self.study_japanese.dao.KanaMapper" >
+  <resultMap id="BaseResultMap" type="com.self.study_japanese.pojo.Kana" >
+    <id column="kid" property="kid" jdbcType="INTEGER" />
+    <result column="kana" property="kana" jdbcType="VARCHAR" />
+    <result column="roman" property="roman" jdbcType="VARCHAR" />
+    <result column="katakana" property="katakana" jdbcType="VARCHAR" />
+    <result column="tips" property="tips" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    kid, kana, roman, katakana, tips
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.self.study_japanese.pojo.KanaExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_kana
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_kana
+    where kid = #{kid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_kana
+    where kid = #{kid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.self.study_japanese.pojo.KanaExample" >
+    delete from t_kana
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.self.study_japanese.pojo.Kana" >
+    insert into t_kana (kid, kana, roman, 
+      katakana, tips)
+    values (#{kid,jdbcType=INTEGER}, #{kana,jdbcType=VARCHAR}, #{roman,jdbcType=VARCHAR}, 
+      #{katakana,jdbcType=VARCHAR}, #{tips,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.self.study_japanese.pojo.Kana" >
+    insert into t_kana
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="kid != null" >
+        kid,
+      </if>
+      <if test="kana != null" >
+        kana,
+      </if>
+      <if test="roman != null" >
+        roman,
+      </if>
+      <if test="katakana != null" >
+        katakana,
+      </if>
+      <if test="tips != null" >
+        tips,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="kid != null" >
+        #{kid,jdbcType=INTEGER},
+      </if>
+      <if test="kana != null" >
+        #{kana,jdbcType=VARCHAR},
+      </if>
+      <if test="roman != null" >
+        #{roman,jdbcType=VARCHAR},
+      </if>
+      <if test="katakana != null" >
+        #{katakana,jdbcType=VARCHAR},
+      </if>
+      <if test="tips != null" >
+        #{tips,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.self.study_japanese.pojo.KanaExample" resultType="java.lang.Integer" >
+    select count(*) from t_kana
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update t_kana
+    <set >
+      <if test="record.kid != null" >
+        kid = #{record.kid,jdbcType=INTEGER},
+      </if>
+      <if test="record.kana != null" >
+        kana = #{record.kana,jdbcType=VARCHAR},
+      </if>
+      <if test="record.roman != null" >
+        roman = #{record.roman,jdbcType=VARCHAR},
+      </if>
+      <if test="record.katakana != null" >
+        katakana = #{record.katakana,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tips != null" >
+        tips = #{record.tips,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update t_kana
+    set kid = #{record.kid,jdbcType=INTEGER},
+      kana = #{record.kana,jdbcType=VARCHAR},
+      roman = #{record.roman,jdbcType=VARCHAR},
+      katakana = #{record.katakana,jdbcType=VARCHAR},
+      tips = #{record.tips,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.self.study_japanese.pojo.Kana" >
+    update t_kana
+    <set >
+      <if test="kana != null" >
+        kana = #{kana,jdbcType=VARCHAR},
+      </if>
+      <if test="roman != null" >
+        roman = #{roman,jdbcType=VARCHAR},
+      </if>
+      <if test="katakana != null" >
+        katakana = #{katakana,jdbcType=VARCHAR},
+      </if>
+      <if test="tips != null" >
+        tips = #{tips,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where kid = #{kid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.self.study_japanese.pojo.Kana" >
+    update t_kana
+    set kana = #{kana,jdbcType=VARCHAR},
+      roman = #{roman,jdbcType=VARCHAR},
+      katakana = #{katakana,jdbcType=VARCHAR},
+      tips = #{tips,jdbcType=VARCHAR}
+    where kid = #{kid,jdbcType=INTEGER}
+  </update>
+</mapper>
