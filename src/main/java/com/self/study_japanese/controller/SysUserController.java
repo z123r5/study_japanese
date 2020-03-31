@@ -3,10 +3,13 @@ package com.self.study_japanese.controller;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.self.study_japanese.dto.SysUserDTO;
 import com.self.study_japanese.pojo.Kana;
+import com.self.study_japanese.pojo.SysUser;
 import com.self.study_japanese.service.KanaService;
 import com.self.study_japanese.service.SysUserService;
 import com.self.study_japanese.utils.R;
+import com.self.study_japanese.utils.RedisUtils;
 import com.self.study_japanese.utils.ShiroUtils;
+import org.apache.catalina.security.SecurityUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -23,6 +26,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.HashMap;
@@ -38,6 +42,12 @@ public class SysUserController {
 
     @Autowired
     private KanaService kanaService;
+
+    @Autowired
+    private RedisUtils redisUtils;
+
+    @Autowired
+    private SysUserService sysUserService;
 
     @RequestMapping("/captcha.jpg")
     public void captcha(HttpServletResponse response){
@@ -74,6 +84,7 @@ public class SysUserController {
         usernamePasswordToken.setRememberMe(userDTO.isRememberMe());
         try{
             subject.login(usernamePasswordToken);
+            subject.getSession().setAttribute("user",sysUserService.findUserByUsername(userDTO.getUsername()));
             return R.ok();
         }catch (UnknownAccountException e){
             return R.error("用户名不存在");
@@ -86,8 +97,11 @@ public class SysUserController {
     @ResponseBody
     public R getKana(){
         Kana kana = kanaService.getKana();
+        SysUser user = (SysUser) SecurityUtils.getSubject().getSession().getAttribute("user");
         Map<String,Object> data = new HashMap<>();
         data.put("kana",kana.getKana());
+        data.put("kanaID",kana.getKid());
+        data.put("userID",user.getUid());
         return R.ok(data);
     }
 }

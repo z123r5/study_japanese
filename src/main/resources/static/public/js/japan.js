@@ -1,3 +1,4 @@
+
 $(function() {
     $.ajax({
         //几个参数需要注意一下
@@ -7,7 +8,14 @@ $(function() {
         success: function (result) {
             console.log(result);//打印服务端返回的数据(调试用)
             if (result.code === 0) {
+                if (result.kana.length>1){
+                    $("#kana").css("font-size",150)
+                }else{
+                    $("#kana").css("font-size",300)
+                }
                 $("#kana").html(result.kana)
+                $("#kanaID").val(result.kanaID)
+                $("#userID").val(result.userID)
             }
             ;
         },
@@ -22,7 +30,7 @@ function submitForm () { // 点击“提交”按钮，执行的方法
         //几个参数需要注意一下
         type: "POST",//方法类型
         dataType: "json",//预期服务器返回的数据类型
-        url: "/jap/submit" ,//url
+        url: "/kana/kanaSubmit" ,//url
         data: $('#japanForm').serialize(),
         success: function (result) {
             console.log(result);//打印服务端返回的数据(调试用)

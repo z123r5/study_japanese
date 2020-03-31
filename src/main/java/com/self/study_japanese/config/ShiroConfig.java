@@ -2,12 +2,14 @@ package com.self.study_japanese.config;
 
 import com.self.study_japanese.realm.UserRealm;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
+import org.apache.shiro.mgt.RememberMeManager;
 import org.apache.shiro.session.mgt.SessionManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.Cookie;
+import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.crazycake.shiro.RedisCacheManager;
 import org.crazycake.shiro.RedisClusterManager;
@@ -104,18 +106,15 @@ public class ShiroConfig {
     }
 
     @Bean(name = "securityManager")
-    public DefaultWebSecurityManager getDefaultWebSecurityManager(@Qualifier("userRealm")UserRealm userRealm,@Qualifier("sessionManager") SessionManager sessionManager){
+    public DefaultWebSecurityManager getDefaultWebSecurityManager(@Qualifier("userRealm")UserRealm userRealm,@Qualifier("sessionManager") SessionManager sessionManager,@Qualifier("rememberMeManager") RememberMeManager rememberMeManager){
         DefaultWebSecurityManager defaultWebSecurityManager = new DefaultWebSecurityManager();
         defaultWebSecurityManager.setSessionManager(sessionManager);
         //缓存管理
         EhCacheManager cacheManager = new EhCacheManager();
         cacheManager.setCacheManagerConfigFile("classpath:ehcache.xml");
-        //cookie管理
-        CookieRememberMeManager cookieRememberMeManager = new CookieRememberMeManager();
-        Cookie cookie = cookieRememberMeManager.getCookie();
-        cookie.setMaxAge(60*60*24*3);
-        cookie.setPath("/");
-        defaultWebSecurityManager.setRememberMeManager(cookieRememberMeManager);
+        //rememberMeManager
+        defaultWebSecurityManager.setRememberMeManager(rememberMeManager);
+
 
         defaultWebSecurityManager.setRealm(userRealm);
         return defaultWebSecurityManager;
@@ -139,6 +138,30 @@ public class ShiroConfig {
         DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();
         defaultAdvisorAutoProxyCreator.setProxyTargetClass(true);//cglib方式
         return  defaultAdvisorAutoProxyCreator;
+    }
+
+
+    @Bean(name = "rememberMeManager")
+    public CookieRememberMeManager rememberMeManager(@Qualifier("rememberMeCookie")SimpleCookie rememberMeCookie){
+        CookieRememberMeManager rememberMeManager = new CookieRememberMeManager();
+        rememberMeManager.setCookie(rememberMeCookie);
+        return rememberMeManager;
+    }
+
+    @Bean(name = "rememberMeCookie")
+    public SimpleCookie sessionIdCookie(){
+        SimpleCookie simpleCookie = new SimpleCookie("rememberMe");
+        simpleCookie.setHttpOnly(true);
+        simpleCookie.setMaxAge(2592000);
+        return simpleCookie;
+    }
+
+    @Bean(name = "sessionIdCookie")
+    public SimpleCookie simpleCookie(){
+        SimpleCookie simpleCookie = new SimpleCookie("sid");
+        simpleCookie.setHttpOnly(true);
+        simpleCookie.setMaxAge(-1);
+        return simpleCookie;
     }
 
 }
