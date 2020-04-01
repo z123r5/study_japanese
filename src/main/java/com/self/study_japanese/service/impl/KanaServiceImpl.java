@@ -28,6 +28,18 @@ public class KanaServiceImpl implements KanaService {
     private final int KANA_NUMBER = 107;
 
     @Override
+    public Kana findKanaByKID(int kid) {
+        KanaExample kanaExample = new KanaExample();
+        KanaExample.Criteria kanaExampleCriteria = kanaExample.createCriteria();
+        kanaExampleCriteria.andKidEqualTo(kid);
+        List<Kana> kanas = kanaMapper.selectByExample(kanaExample);
+        if (kanas.size()==1){
+            return kanas.get(0);
+        }
+        return null;
+    }
+
+    @Override
     public Kana getKana() {
         //查出分数表
         List<QueryScoreDTO> kanaMemory = memoryMapper.getScore((int) ShiroUtils.getUserId());

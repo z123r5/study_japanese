@@ -44,7 +44,9 @@ public class DateUtils {
     }
 
     public static void main(String[] args) {
-
+        double c = 15;
+        double m = 3;
+        System.out.println(String.format("%.2f",c/(c+m)*100));
     }
 
 }

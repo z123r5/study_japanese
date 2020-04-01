@@ -18,6 +18,11 @@ public class Memory implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public Memory(Integer uid, Date memoryDate) {
+        this.uid = uid;
+        this.memoryDate = memoryDate;
+    }
+
     @Override
     public String toString() {
         return "Memory{" +
